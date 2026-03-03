@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Módulo de Gestión y Control de Cargos y Servicios</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="container__header">
+            <header class="topnav">
+                <div class="topnav__brand" aria-label="Panel de Control">
+                    <img src="../../public/assets/logo.png" style="width: auto; height: auto; max-width: 2rem" class="topnav__logo" alt="logo">
+                    <span class="topnav__title">Panel de control</span>
+                </div>
+                <nav class="topnav__nav" aria-label="Enlaces principales">
+                    <a href="#" class="topnav__link topnav__link--active" data-nav="inicio">Inicio</a>
+                    <a href="#" class="topnav__link" data-nav="servicios">Servicios</a>
+                    <a href="#" class="topnav__link" data-nav="comuneros">Comuneros</a>
+                    <a href="#" class="topnav__link" data-nav="estadisticas">Estadisticas</a>
+                </nav>
+                <div class="topnav__search" role="search">
+                    <input class="topnav__search-input" type="search" placeholder="Buscar comuneros" id="search-main">
+                    <button class="topnav__search-btn" id="search-btn" title="Buscar">
+                        <i class="topnav__search-icon fa-solid fa-magnifying-glass">
+                            ::before
+                        </i>
+                    </button>
+                </div>
+            </header>
+            <main class="dashboard">
+                <section class="dashboard__section">
+                    <article class="card">
+                        <h2 class="card__title">Comuneros Activos</h2>
+                        <p class="card__description">
+                            Lista de comuneros con cargos activos y su fecha de inicio
+                        </p>
+                        <div class="card__people">
+                            <div class="person-card">
+                                <div class="person-card__avatar" aria-hidden="true">
+                                    <i class="person-card__icon fa-solid fa-user"></i>
+                                </div>
+                                <div class="person-card__info">
+                                    <div class="person-card__header">
+                                        <span class="person-card__name">Juan Pérez</span>
+                                        <span class="person-card__position">Presidente</span>
+                                    </div>
+                                    <div class="person-card__role">
+                                        Cargo activo desde 2022
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="person-card">
+                                <div class="person-card__avatar" aria-hidden="true">
+                                    <i class="person-card__icon fa-solid fa-user"></i>
+                                </div>
+                                <div class="person-card__info">
+                                    <div class="person-card__header">
+                                        <span class="person-card__name">María Gómez</span>
+                                        <span class="person-card__position">Tesorera</span>
+                                    </div>
+                                    <div class="person-card__role">
+                                        Cargo activo desde 2023
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="person-card">
+                                <div class="person-card__avatar" aria-hidden="true">
+                                    <i class="person-card__icon fa-solid fa-user"></i>
+                                </div>
+                                <div class="person-card__info">
+                                    <div class="person-card__header">
+                                        <span class="person-card__name">Luis Rodríguez</span>
+                                        <span class="person-card__position">Secretario</span>
+                                    </div>
+                                    <div class="person-card__role">
+                                        Cargo activo desde 2024
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </section>
+
+            </main>
+        </div>
+    </div>
+</body>
+</html>
