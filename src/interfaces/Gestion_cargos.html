@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Módulo de Gestión y Control de Cargos y Servicios</title>
     <link rel="stylesheet" href="../styles/style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Xx..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
@@ -23,9 +25,7 @@
                 <div class="topnav__search" role="search">
                     <input class="topnav__search-input" type="search" placeholder="Buscar comuneros" id="search-main">
                     <button class="topnav__search-btn" id="search-btn" title="Buscar">
-                        <i class="topnav__search-icon fa-solid fa-magnifying-glass">
-                            ::before
-                        </i>
+                        <i class="topnav__search-icon fa-solid fa-magnifying-glass"></i>
                     </button>
                 </div>
             </header>
@@ -84,10 +84,64 @@
                         </div>
 
                     </article>
-
+                    <article class="card" style="margin-top: 12px">
+                        <h3 class="card__title">Ruleta de asignación de cargos</h3>
+                        <p class="card__description">
+                            Selecciona un cargo para asignar
+                        </p>
+                        <div class="card__assign">
+                            <label class="card__container">
+                                <select class="card__container-select">
+                                    <option value>-- Seleccionar cargo</option>
+                                    <option value="presidente">Presidente</option>
+                                    <option value="tesorero">Tesorero</option>
+                                    <option value="secretario">Secretario</option>
+                                </select>
+                                <button class="card__button" id="asignar-btn">Asignar a Juan Pérez</button>
+                            </label>
+                        </div>
+                        <div class="card__roulette">
+                            <div class="card__roulette-container">
+                                <i class="card__roulette-icon fa-solid fa-circle-norch fa-spin"></i>
+                            </div>
+                        </div>
+                        <div class="card__message">
+                            La ruleta ha sido asignada para
+                            <strong>Juan Pérez</strong>
+                            .
+                        </div>
+                    </article>
                 </section>
-
+                <aside class="dashboard__aside">
+                    <div class="summary-card">
+                        <h4 class="summary-card__title">Resumen rápido</h4>
+                        <p class="summary-card__description">
+                            Panel con información resumida del estado de cargos y servicios
+                        </p>
+                        <div class="summary-card__stats">
+                            <div class="summary-card__stat">
+                                <span class="summary-card__label">Comuneros</span>
+                                <span class="summary-card__value">150</span>
+                            </div>
+                            <div class="summary-card__stat">
+                                <span class="summary-card__label">Servicios Activos</span>
+                                <span class="summary-card__value">12</span>
+                            </div>
+                            <div class="summary-card__stat">
+                                <span class="summary-card__label">Cargos Activos</span>
+                                <span class="summary-card__value">45</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="summary-card summary-card--note">
+                        <h4 class="summary-card__title">Notas</h4>
+                        <p class="summary-card__description">
+                            "Esta interfaz simula la selección de cargos."
+                        </p>
+                    </div>
+                </aside>
             </main>
+
         </div>
     </div>
 </body>
