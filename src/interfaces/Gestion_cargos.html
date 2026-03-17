@@ -11,24 +11,7 @@
 <body>
     <div class="container">
         <div class="container__header">
-            <header class="topnav">
-                <div class="topnav__brand" aria-label="Panel de Control">
-                    <img src="../../public/assets/logo.png" style="width: auto; height: auto; max-width: 2rem" class="topnav__logo" alt="logo">
-                    <span class="topnav__title">Panel de control</span>
-                </div>
-                <nav class="topnav__nav" aria-label="Enlaces principales">
-                    <a href="#" class="topnav__link topnav__link--active" data-nav="inicio">Inicio</a>
-                    <a href="#" class="topnav__link" data-nav="servicios">Servicios</a>
-                    <a href="#" class="topnav__link" data-nav="comuneros">Comuneros</a>
-                    <a href="#" class="topnav__link" data-nav="estadisticas">Estadisticas</a>
-                </nav>
-                <div class="topnav__search" role="search">
-                    <input class="topnav__search-input" type="search" placeholder="Buscar comuneros" id="search-main">
-                    <button class="topnav__search-btn" id="search-btn" title="Buscar">
-                        <i class="topnav__search-icon fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </div>
-            </header>
+            <header class="topnav" id="topnav"></header>
             <main class="dashboard">
                 <section class="dashboard__section">
                     <article class="card">
@@ -165,8 +148,16 @@
                     </div>
                 </aside>
             </main>
-
+            <footer class="footer" id="footer"></footer>
         </div>
     </div>
 </body>
 </html>
+<script>
+    fetch('../components/header_panel_de_control.html').then(res => res.text()).then(html => {
+        document.getElementById('topnav').innerHTML = html;
+    });
+    fetch('../components/footer.html').then(res => res.text()).then(html => {
+        document.getElementById('footer').innerHTML = html;
+    });
+</script>
