@@ -38,6 +38,7 @@ body{
     width:100%;
     max-width:var(--container-w);
 }
+
 /* ------------------------------
       Top Navigation
       ------------------------------ */
@@ -104,7 +105,7 @@ body{
     min-width:180px;
 }
 
-.topnav__search-button{
+.topnav__search-btn{
     background:var(--accent);
     color:white;
     border:none;
@@ -113,7 +114,7 @@ body{
     cursor:pointer;
     font-weight:700;
 }
-
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// Panel de control de cargos
 /* ------------------------------
       Layout: gestión de cargos: Comuneros Activos
       ------------------------------ */
@@ -288,6 +289,61 @@ div{
     font-size:0.95rem;
 }
 /* ------------------------------
+      Layout: gestión de cargos: acciones disponibles
+      ------------------------------ */
+.actions-card__info{
+    display:flex;
+    gap:0.75rem;
+    flex-wrap: wrap;
+}
+.actions-card__header{
+    flex: 1 1 180px;
+    display:flex;
+    gap:0.75rem;
+    align-items: center;
+    padding: 0.8rem;
+    border-radius:10px;
+    background: linear-gradient(180deg, rgba(37, 99,235, 0.04), var(--card));
+}
+.card__actions{
+    display:flex;
+    gap:0.75rem;
+    flex-wrap: wrap;
+}
+.actions-card{
+    display:flex;
+    gap:0.75rem;
+    flex: 1 1 180px;
+    align-items: center;
+    padding: 0.8rem;
+    border-radius:10px;
+    background: linear-gradient(180deg, rgba(37, 99, 235, 0.04), var(--card));
+    border: 1px solid #eef3fb;
+    cursor: pointer;
+    transition: transform .14s ease, box-shadow .14s ease;
+    user-select: none;
+}
+.actions-card__avatar{
+    width:48px;
+    height:48px;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: #ffffff;
+    box-shadow: 0 6px 14px rgba(16, 24, 40, 0.04);
+    font-size: 1.15rem;
+    color:  var(--accent);
+}
+.actions-card__info{
+    display:flex;
+    gap:0.75rem;
+    flex-wrap: wrap;
+}
+.actions-card__header{
+    display : flex;
+}
+/* ------------------------------
       Layout: gestión de cargos: resumen
       ------------------------------ */
 .summary-card{
@@ -329,4 +385,19 @@ div{
 }
 .summary-card--note{
     margin-top: 12px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// Panel de control de cargos-comuneros
+ */
+actions__card-info2{
+    display: flex;
+    gap:0.75rem;
+    flex-wrap: wrap;
+}
+actions__card-header2{
+    flex-direction: column;
+}
+actions-card__name{
+    display: flex;
+    color: var(--muted);
 }
