@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Módulo de Gestión y Control de Cargos y Servicios</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Xx..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="container">
+    <div class="container__header">
+        <header class="topnav" id="topnav"></header>
+        <main class="dashboard">
+            <section class="dashboard__section">
+                <article class="card">
+                    <h2 class="card__title">Acciones disponibles</h2>
+                    <p class="card__description">
+                        Acciones disponibles para aplicar sobre los comuneros
+                    </p>
+                    <div class="card__actions">
+                        <div class="actions-card">
+                            <div class="actions-card__avatar" aria-hidden="true">
+                                <i class="actions-card__icon fa-solid fa-user-check"></i>
+                            </div>
+                            <div class="actions-card__info2">
+                                <div class="actions-card__header2">
+                                    <span class="actions-card__name">Activar</span>
+                                    <span class="actions-card__description">Activar al comunero seleccionado</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="actions-card">
+                            <div class="actions-card__avatar" aria-hidden="true">
+                                <i class="actions-card__icon fa-solid fa-user-check"></i>
+                            </div>
+                            <div class="actions-card__info2">
+                                <div class="actions-card__header2">
+                                    <span class="actions-card__name">Desactivar</span>
+                                    <span class="actions-card__description">Desactivar al comunero seleccionado</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="actions-card">
+                            <div class="actions-card__avatar" aria-hidden="true">
+                                <i class="actions-card__icon fa-solid fa-user-check"></i>
+                            </div>
+                            <div class="actions-card__info2">
+                                <div class="actions-card__header2">
+                                    <span class="actions-card__name">Editar</span>
+                                    <span class="actions-card__description">Modificar los datos seleccionados</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="actions-card">
+                            <div class="actions-card__avatar" aria-hidden="true">
+                                <i class="actions-card__icon fa-solid fa-user-check"></i>
+                            </div>
+                            <div class="actions-card__info2">
+                                <div class="actions-card__header2">
+                                    <span class="actions-card__name">Dar de Baja</span>
+                                    <span class="actions-card__description">Eliminar al comunero selecionado del sistema</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+                <article class="card" >
+                    <h3 class="card__title">Gestión de comuneros</h3>
+                    <p class="card__description">
+                        Buscar, editar y administrar el estado de los comuneros
+                    </p>
+                    <div class="card__search">
+                        <input type="search" id="search-comuneros" id="search-comuneros" placeholder="Buscar comumero..."/>
+                    </div>
+                    <div class="card__list">
+                        <div class="card__list-item">
+                            <i class="card__icon fa-solid fa-user"></i>
+                            <div class="card__info">
+                                <div class="card__header">Comunero 1</div>
+                                <div class="card__description">Activo • Inicio: 2023-08-01</div>
+                                <div class="card__actions">
+                                    <button class="card__cations-act" data-action="activate" data-target="1">Activar</button>
+                                    <button class="card__cations-deact" data-action="deactivate" data-target="1">Desactivar</button>
+                                    <button class="card__cations-edit" data-action="edit" data-target="1">Editar</button>
+                                    <button class="card__cations-del" data-action="remove" data-target="1">Dar de baja</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__list-item">
+                            <i class="card__icon fa-solid fa-user"></i>
+                            <div class="card__info">
+                                <div class="card__header">Comunero 2</div>
+                                <div class="card__description">Activo • Inicio: 2022-08-01</div>
+                                <div class="card__actions">
+                                    <button class="card__cations-act" data-action="activate" data-target="1">Activar</button>
+                                    <button class="card__cations-deact" data-action="deactivate" data-target="1">Desactivar</button>
+                                    <button class="card__cations-edit" data-action="edit" data-target="1">Editar</button>
+                                    <button class="card__cations-del" data-action="remove" data-target="1">Dar de baja</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__list-item">
+                            <i class="card__icon fa-solid fa-user"></i>
+                            <div class="card__info">
+                                <div class="card__header">Comunero 3</div>
+                                <div class="card__description">Activo • Inicio: 2024-08-01</div>
+                                <div class="card__actions">
+                                    <button class="card__cations-act" data-action="activate" data-target="1">Activar</button>
+                                    <button class="card__cations-deact" data-action="deactivate" data-target="1">Desactivar</button>
+                                    <button class="card__cations-edit" data-action="edit" data-target="1">Editar</button>
+                                    <button class="card__cations-del" data-action="remove" data-target="1">Dar de baja</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__list-item">
+                            <i class="card__icon fa-solid fa-user"></i>
+                            <div class="card__info">
+                                <div class="card__header">Comunero 1</div>
+                                <div class="card__description">Activo • Inicio: 2021-08-01</div>
+                                <div class="card__actions">
+                                    <button class="card__cations-act" data-action="activate" data-target="1">Activar</button>
+                                    <button class="card__cations-deact" data-action="deactivate" data-target="1">Desactivar</button>
+                                    <button class="card__cations-edit" data-action="edit" data-target="1">Editar</button>
+                                    <button class="card__cations-del" data-action="remove" data-target="1">Dar de baja</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__message">
+                        La ruleta ha sido asignada para
+                        <strong>Juan Pérez</strong>
+                        .
+                    </div>
+                </article>
+            </section>
+            <aside class="dashboard__aside">
+                <div class="summary-card">
+                    <h4 class="summary-card__title">Resumen rápido</h4>
+                    <p class="summary-card__description">
+                        Panel con información resumida del estado de cargos y servicios
+                    </p>
+                    <div class="summary-card__stats">
+                        <div class="summary-card__stat">
+                            <span class="summary-card__label">Comuneros</span>
+                            <span class="summary-card__value">150</span>
+                        </div>
+                        <div class="summary-card__stat">
+                            <span class="summary-card__label">Servicios Activos</span>
+                            <span class="summary-card__value">12</span>
+                        </div>
+                        <div class="summary-card__stat">
+                            <span class="summary-card__label">Cargos Activos</span>
+                            <span class="summary-card__value">45</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="summary-card summary-card--note">
+                    <h4 class="summary-card__title">Notas</h4>
+                    <p class="summary-card__description">
+                        "Apartado para anotar recordatorios."
+                    </p>
+                    <input class="summary-card__notes">
+
+                    </input>
+                </div>
+            </aside>
+        </main>
+        <footer class="footer" id="footer"></footer>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    fetch('../components/header_panel_de_control.html').then(res => res.text()).then(html => {
+        document.getElementById('topnav').innerHTML = html;
+    });
+    fetch('../components/footer.html').then(res => res.text()).then(html => {
+        document.getElementById('footer').innerHTML = html;
+    });
+</script>
