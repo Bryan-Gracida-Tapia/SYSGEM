@@ -68,12 +68,22 @@
 
                 </article>
                 <article class="card" >
-                    <h3 class="card__title">Gestión de comuneros</h3>
-                    <p class="card__description">
-                        Buscar, editar y administrar el estado de los comuneros
-                    </p>
+                    <div class="card__managetop">
+                        <div class="card__managetop--left">
+                            <h3 class="card__title">Gestión de comuneros</h3>
+                            <p class="card__description--gestion">
+                                Buscar, editar y administrar el estado de los comuneros
+                            </p>
+                        </div>
+                        <div class="card__managetop--right">
+                            <button class="card__managetop--btn">
+                                <i class="fa-solid fa-user-plus"></i>
+                                Agregar nuevo comunero
+                            </button>
+                        </div>
+                    </div>
                     <div class="card__search">
-                        <input type="search" id="search-comuneros" id="search-comuneros" placeholder="Buscar comumero..."/>
+                        <label for="search-comuneros"></label><input type="search" id="search-comuneros" placeholder="Buscar comumero..."/>
                     </div>
                     <div class="card__list">
                         <div class="card__list-item">
@@ -163,8 +173,6 @@
                         "Apartado para anotar recordatorios."
                     </p>
                     <input class="summary-card__notes">
-
-                    </input>
                 </div>
             </aside>
         </main>
