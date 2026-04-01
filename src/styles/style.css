@@ -470,6 +470,116 @@ div{
     color: var(--danger);
 }
 /* ------------------------------
+      Layout: gestión de cargos: formulario
+      ------------------------------ */
+.form{
+    margin-top: 0.8rem;
+}
+.form__grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+}
+.form__group--full{
+    grid-column: 1 / -1;
+}
+.form__group{
+    display: flex;
+    flex-direction: column;
+    gap:0.4rem;
+}
+/* ---------------------------------- Etiquetas y input -- */
+.form__label{
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+.form__input{
+    padding: 0.55rem 0.6rem;
+    border-radius:8px;
+    border: 1px solid #e6edf6;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+/* ---------------------------------- Radio -- */
+.form__options{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+.form__option{
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+.form__radio{
+    accent-color: #3b82f6;
+    cursor: pointer;
+}
+.form__option-label{
+    color: #0f172a;
+}
+
+/* ---------------------------------- Botones -- */
+.form__actions{
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.6rem;
+}
+
+/* Base */
+.form__button{
+    padding: 0.5rem 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #e6edf6;
+    background: #fff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.form__button:hover{
+    background: #f8fafc;
+}
+
+.form__button--primary{
+    background: var(--accent);
+    color: #fff;
+    border: none;
+}
+
+.form__button--primary:hover{
+    background: #2563eb;
+}
+
+.form__button--add{
+    background: var(--success);
+    color: #fff;
+    border: none;
+}
+
+.form__button--add:hover{
+    background: #059669;
+}
+/* ---------------------------------- Contraseña -- */
+.form__toggle{
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 0.25rem 0.4rem;
+    color:  var(--muted);
+}
+
+/* ------------------------------
       Layout: gestión de cargos: resumen
       ------------------------------ */
 .summary-card{
@@ -520,4 +630,17 @@ div{
 }
 .summary-card--addition{
     margin-top: 12px;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// Footer
+ */
+.footer{
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+.footer a{
+    color: var(--muted);
+    text-decoration: underline;
+    margin-left: 0.6rem;
 }
