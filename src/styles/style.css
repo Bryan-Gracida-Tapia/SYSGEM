@@ -39,9 +39,7 @@ body{
     max-width:var(--container-w);
 }
 
-/* ------------------------------
-      Top Navigation
-      ------------------------------ */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// Top Navigation */
 .topnav{
     display:flex;
     align-items:center;
@@ -289,15 +287,28 @@ div{
     color:var(--muted);
     font-size:0.95rem;
 }
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// Panel de control de cargos-comuneros
+ */
+.action-card__info{
+    flex-direction: column;
+}
+.action-card__name{
+    font-weight: 700;
+}
+.action-card__description{
+    font-size: 0.85rem;;
+    color: var(--muted);
+}
 /* ------------------------------
       Layout: gestión de cargos: acciones disponibles
       ------------------------------ */
-.actions-card__info{
+.action-card__info{
     display:flex;
     gap:0.75rem;
     flex-wrap: wrap;
 }
-.actions-card__header{
+.action-card__header{
     flex: 1 1 180px;
     display:flex;
     gap:0.75rem;
@@ -306,12 +317,12 @@ div{
     border-radius:10px;
     background: linear-gradient(180deg, rgba(37, 99,235, 0.04), var(--card));
 }
-.card__actions{
+.card__action{
     display:flex;
     gap:0.75rem;
     flex-wrap: wrap;
 }
-.actions-card{
+.action-card{
     display:flex;
     gap:0.75rem;
     flex: 1 1 180px;
@@ -324,7 +335,7 @@ div{
     transition: transform .14s ease, box-shadow .14s ease;
     user-select: none;
 }
-.actions-card__avatar{
+.action-card__avatar{
     width:48px;
     height:48px;
     border-radius:10px;
@@ -336,13 +347,127 @@ div{
     font-size: 1.15rem;
     color:  var(--accent);
 }
-.actions-card__info{
+.action-card__info{
     display:flex;
     gap:0.75rem;
     flex-wrap: wrap;
 }
-.actions-card__header{
+.action-card__header{
     display : flex;
+}
+/* ------------------------------
+      Layout: gestión de cargos: gestión de comuneros
+      ------------------------------ */
+.card__managetop{
+    display: flex;
+    gap:0.75rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+}
+.card__managetop-left{
+    display: flex;
+    gap:0.75rem;
+    align-items: center;
+}
+.card__description--gestion{
+    margin-left: 0.6rem;
+    color: var(--muted);
+}
+.card__managetop--btn{
+    padding: 0.5rem 0.75rem;
+    border-radius:10px;
+    border: 1px solid #e6edf6;
+    background: transparent;
+    font-weight: 700;
+    cursor: pointer;
+}
+.search__top{
+    width: 100%;
+    padding: 0.6rem;
+    border-radius:10px;
+    border: 1px solid #e6edf6;
+}
+.card__list{
+    display: flex;
+    flex-direction: column;
+    gap:0.6rem;
+    padding: 1.25rem;
+}
+.card__item{
+    display: flex;
+    gap:0.75rem;
+    align-items: center;
+    padding: 0.6rem;
+    border-radius:10px;
+    border : 1px solid #eef3fb;
+    transition: background .12s ease;
+}
+.card__item:hover{
+    cursor: pointer;
+}
+.card__avatar{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #e6edf6;
+    background:linear-gradient(135deg, var(--accent), var(--accent-2));
+}
+.card__info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.card__name{
+    font-weight: 700;
+}
+.card__actions {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.card__btn {
+    padding: 0.45rem 0.6rem;
+    border-radius: 8px;
+    border: 1px solid #e6edf6;
+    font-weight: 700;
+    cursor: pointer;
+    background: white;
+    transition: all 0.2s ease;
+}
+
+.card__button:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+
+.card__btn--success {
+    background: #ecfdf5;
+    border-color: #bbf7d0;
+    color: var(--success);
+}
+
+.card__btn--warning {
+    background: #fff7ed;
+    border-color: #fed7aa;
+    color: #b45309;
+}
+
+.card__btn--edit {
+    background: #edf6ff;
+    border-color: #aacafe;
+    color: #0961b4;
+}
+
+.card__btn--danger {
+    background: #fff1f2;
+    border-color: #fca5a5;
+    color: var(--danger);
 }
 /* ------------------------------
       Layout: gestión de cargos: resumen
@@ -395,126 +520,4 @@ div{
 }
 .summary-card--addition{
     margin-top: 12px;
-}
-
-/* ////////////////////////////////////////////////////////////////////////////////////////////////// Panel de control de cargos-comuneros
- */
-.actions__card-info2{
-    display: flex;
-    gap:0.75rem;
-    flex-wrap: wrap;
-}
-.actions__card-header2{
-    flex-direction: column;
-}
-.actions-card__name{
-    display: flex;
-    font-weight: 700;
-}
-.actions-card__description{
-    font-size: 0.85rem;;
-    color: var(--muted);
-}
-/* ------------------------------
-      Layout: gestión de cargos: gestión de comuneros
-      ------------------------------ */
-.card__managetop{
-    display: flex;
-    gap:0.75rem;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 0.75rem;
-}
-.card__managetop--left{
-    display: flex;
-    gap:0.75rem;
-    align-items: center;
-}
-.card__description--gestion{
-    margin-left: 0.6rem;
-    color: var(--muted);
-}
-.card__managetop--btn{
-    padding: 0.5rem 0.75rem;
-    border-radius:10px;
-    border: 1px solid #e6edf6;
-    background: transparent;
-    font-weight: 700;
-    cursor: pointer;
-}
-.search__top{
-    width: 100%;
-    padding: 0.6rem;
-    border-radius:10px;
-    border: 1px solid #e6edf6;
-}
-.card__list{
-    display: flex;
-    flex-direction: column;
-    gap:0.6rem;
-    padding: 1.25rem;
-}
-.card__list-item{
-    display: flex;
-    gap:0.75rem;
-    align-items: center;
-    padding: 0.6rem;
-    border-radius:10px;
-    border : 1px solid #eef3fb;
-    transition: background .12s ease;
-}
-.card__list-item:hover{
-
-}
-.card__list--avatar{
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    color: #e6edf6;
-    background:linear-gradient(135deg, var(--accent), var(--accent-2));
-}
-.card__info {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-.card__name{
-    font-weight: 700;
-}
-.card__actions{
-    display: flex;
-    gap:0.5rem;
-    align-items: center;
-}
-.card__actions button{
-    padding: 0.45rem 0.6rem;
-    border-radius:8px;
-    border: 1px solid #e6edf6;
-    font-weight: 700;
-    cursor: pointer;
-}
-.card__actions-act{
-    background: #ecfdf5;
-    border-color: #bbf7d0;
-    color: var(--success);
-}
-.card__actions-deact{
-    background: #fff7ed;
-    border-color: #fed7aa;
-    color: #b45309;
-}
-.card__actions-edit{
-    background: #edf6ff;
-    border-color: #aacafe;
-    color: #0961b4;
-}
-.card__actions-del{
-    background: #fff1f2;
-    border-color: #fca5a5;
-    color: var(--danger);
 }
