@@ -35,10 +35,12 @@ body{
     justify-content:center;
 }
 .dashboard{
+    display:grid;
+    gap: 18px;
+    align-items: center;
     width:100%;
     max-width:var(--container-w);
 }
-
 /* ////////////////////////////////////////////////////////////////////////////////////////////////// Top Navigation */
 .topnav{
     display:flex;
@@ -129,7 +131,7 @@ main{
 }
 .card{
     background:var(--card);
-    padding:1.5rem;
+    padding:18px;
     border-radius:var(--radius);
     box-shadow:var(--shadow);
     margin-top: 12px;
@@ -630,6 +632,43 @@ div{
 }
 .summary-card--addition{
     margin-top: 12px;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// Gestión de anuncios
+ */
+.dashboard__section--news{
+    margin-bottom: 0.8rem;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+.card__managetop--new{
+    display: flex;
+    flex-direction: column;
+}
+.form__flex{
+    display: flex;
+    flex-direction: column;
+    gap:0.9rem;
+    margin: 0.85rem;
+}
+.action_news{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.actions__button{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    background: var(--accent);
+    color: white;
+    box-shadow: 0 6px 14px rgba(37, 99, 235, 0.14);
 }
 /* ////////////////////////////////////////////////////////////////////////////////////////////////// Footer
  */
