@@ -80,7 +80,19 @@ body{
     border-radius:10px;
     transition:all .2s ease;
 }
-
+.topnav__logout{
+    background: #fff;
+    color: var(--muted);
+    font-weight:600;
+    border: none;
+    padding:0.45rem 0.6rem;
+    border-radius:10px;
+    transition:all .2s ease;
+}
+.topnav__logout:hover{
+    background: #ef6262;   /* rojo */
+    color: #fff;           /* texto blanco */
+}
 .topnav__link:hover{
     background:#f1f5ff;
     color:var(--accent);
@@ -694,6 +706,7 @@ div{
 .shortcut__icon{
     width: 2.4rem;
     height: 2.4rem;
+    border: none;
     border-radius: 8px;
     display: flex;
     align-items: center;
