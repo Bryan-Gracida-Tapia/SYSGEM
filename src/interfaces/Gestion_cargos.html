@@ -149,13 +149,24 @@
             <footer class="footer" id="footer"></footer>
         </div>
     </div>
+    <script src="../Javacripts/global.js"></script>
+    <script src="../Javacripts/gestion_cargos.js"></script>
 </body>
 </html>
 <script>
-    fetch('../components/header_panel_de_control.html').then(res => res.text()).then(html => {
-        document.getElementById('topnav').innerHTML = html;
-    });
-    fetch('../components/footer.html').then(res => res.text()).then(html => {
-        document.getElementById('footer').innerHTML = html;
-    });
+    fetch('../components/header_panel_de_control.html')
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById('topnav').innerHTML = html;
+
+            // 🔥 ACTIVAR FUNCIONES DESPUÉS DEL FETCH
+            initLogout();
+            renderUser();
+        });
+
+    fetch('../components/footer.html')
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById('footer').innerHTML = html;
+        });
 </script>
